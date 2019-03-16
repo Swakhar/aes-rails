@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tried to maintain the clean code architecture of this https://github.com/chicks/aes gem.
 
 Things you may want to cover:
 

@@ -2,22 +2,10 @@
 
 Tried to maintain the clean code architecture of this https://github.com/chicks/aes gem.
 
-Things you may want to cover:
+# Root AES class:
 
-* Ruby version
+* encrypt method
+  Not changed anything
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* decrypt method
+  Not changed anything

@@ -2,7 +2,7 @@
 
 Tried to maintain the clean code architecture of this https://github.com/chicks/aes gem.
 
-__Root AES class:
+## Root AES class:
 
 * `encrypt` and `decrypt` method
   - Not changed anything
@@ -11,7 +11,7 @@ __Root AES class:
   - added guard clause istead of `(case/when)`. For two condition `(case/when)` seems a bit lengthy code which can be easily done by gurad clause with `return`
   - Added a private method for the `key` and `iv` method. Because two methods logic is almost same expect the item type. That's why passed item as a parameter for this method.
 
-__AES::AES class
+## AES::AES class
 
 * added `attr_reader` instead of `attr`. We only getter method of these attributes and removed two attr `cipher_text` and `plain_text` which is unnecessary of our current code logic.
 
@@ -26,7 +26,7 @@ __AES::AES class
 * `random_key` method
   - exchanged `unpack` method with `unpack1`. As `unpack1` returns only `string`, then we do not need to fetch array's `[0]` index
 
-private method
+Private method
 
 * _random_seed method
   - removed unnecessary return inside the `if` condition.
@@ -39,4 +39,4 @@ private method
 * b64_e_with_iv_and_encrypt method
   - added new private method which is actually used in `encrypt` method for break the long line.
 
-__Removed all comments from the code.
+## Removed all comments from the code.

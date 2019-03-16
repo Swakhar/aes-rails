@@ -28,4 +28,15 @@ __AES::AES class
 
 private method
 
-* _random
+* _random_seed method
+  - removed unnecessary return inside the `if` condition.
+* merge_options method
+  - added new ruby syntax here for `hash`.
+* _handle_iv method
+  - removed `(case/when)` logic and integrated with guard clause and simple if condition
+* _setup method
+  - small change in the last line for `@cipher.key`. Removed `block` from `map` method and added simply `map(&:hex)`, which looks good for me than previous and result is the same.
+* b64_e_with_iv_and_encrypt method
+  - added new private method which is actually used in `encrypt` method for break the long line.
+
+__Removed all comments from the code.

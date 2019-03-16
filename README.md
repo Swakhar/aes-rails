@@ -5,7 +5,9 @@ Tried to maintain the clean code architecture of this https://github.com/chicks/
 # Root AES class:
 
 * encrypt method
-  Not changed anything
+
+  - Not changed anything
 
 * decrypt method
-  Not changed anything
+
+  - Not changed anything
